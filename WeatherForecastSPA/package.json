@@ -1,0 +1,21 @@
+{
+  "name": "WeatherApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.8.x",
+    "cpx": "^1.5.0",
+    "http-server": "^0.12.3"
+  }
+}
