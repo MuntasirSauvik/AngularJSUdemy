@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "postinstall": "npm run copy-libs",
     "prestart": "npm install",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist}/**/*\" app/lib -C",
     "start": "http-server ./app -a localhost -p 8000 -c-1"
   },
   "keywords": [],
